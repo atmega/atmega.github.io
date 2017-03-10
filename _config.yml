@@ -1,0 +1,23 @@
+
+# Permalinks
+permalink:        /post/:title
+relative_permalinks: true
+
+# Setup
+title:            atme.ga
+tagline:          Tutorial Laravel Bahasa Indonesia
+url:              http://atme.ga
+paginate:         1
+baseurl:          /
+author:
+  name:           Sukmo Wijoyo
+  url:            https://twitter.com/lorokusumo
+  email:          sukmo@smkmaliga.sch.id
+
+# Build options
+exclude:          [node_modules]
+
+# Custom vars
+version:          1.0.0
+github:
+repo: https://github.com/atmega/atmega.github.io
