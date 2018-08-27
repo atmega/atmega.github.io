@@ -132,13 +132,13 @@ function video_play(x) {
   code = document.createElement("p");
   if ( x == 'Archangel' || x == 'archangel' ) {
     code.innerHTML = '<span class="info">"TSFH - Archangel Cover"</span> is starting...';
-    video.setAttribute("src", "https://www.youtube.com/embed/CAb9Y832ARw");
+    video.setAttribute("src", "https://www.youtube.com/embed/CAb9Y832ARw?autoplay=1&theme=dark&color=red&keyboard=0&autohide=2&showinfo=0&rel=0&iv_load_policy=3");
     document.getElementById("terminal_screen").appendChild(code);
     document.getElementById("terminal_screen").appendChild(video);
 
   } else if ( x == 'Endless Love' || x == 'endless love' ) {
     code.innerHTML = '<span class="info">"EndlessLove - The Myth"</span> is starting...';
-    video.setAttribute("src", "https://www.youtube.com/embed/mtY8E_7eF1o");
+    video.setAttribute("src", "https://www.youtube.com/embed/mtY8E_7eF1o?autoplay=1&theme=dark&color=red&keyboard=0&autohide=2&showinfo=0&rel=0&iv_load_policy=3");
     document.getElementById("terminal_screen").appendChild(code);
     document.getElementById("terminal_screen").appendChild(video);
   } else {
