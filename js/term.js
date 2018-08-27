@@ -157,7 +157,7 @@ function video_list() {
     <p class="warning"><i class="fa fa-music" aria-hidden="true"></i>
  Here is the list</p>
     
-    <ul class="list">
+    <ul class="list-lagu">
       <li>Archangel <span class="comment">TSFH</span></li>
       <li>Endless Love <span class="comment">The Myth</span></li>
     </ul>

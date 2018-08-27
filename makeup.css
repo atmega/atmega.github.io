@@ -64,3 +64,7 @@ ul.list li{
   list-style: none;
   display: inline;
 }
+
+ul.list-lagu li{
+  list-style: none;
+}
