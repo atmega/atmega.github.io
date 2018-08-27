@@ -5,48 +5,49 @@
     <title>atme.ga</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
+    <meta name="description" content="CLI (Command Line Interface) website UI">
+    <meta name="keyword" content="CLI, Command Line Interface, UI, User Interface, Design">
     <meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@lorokusumo" />
-<meta name="twitter:creator" content="@lorokusumo" />
-<meta property="og:url" content="https://atme.ga/" />
-<meta property="og:title" content="atme.ga ditenagai oleh kopi & cinta" />
-<meta property="og:description" content="atme.ga ditenagai oleh kopi & cinta." />
-<meta property="og:image" content="https://atmega.github.io/arni.jpg" />
-  <style>
-    .fa-heart{color:#E91E63;}
-    .fa-coffee{color:#795548;}
-    .blinking{
-      animation:blinkingText 0.5s infinite;
-    }
-    @keyframes blinkingText{
-      0%{		color: #000;	}
-      49%{	color: transparent;	}
-      50%{	color: transparent;	}
-      99%{	color:transparent;	}
-      100%{	color: #000;	}
-    }
-    
-  </style>
-  <link rel="stylesheet" href="css/tooltip.css" type="text/css"/>
-  <link rel="stylesheet" href="makeup.css" type="text/css"/>
-  <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
-  <script defer src="js/tooltip.js"></script>
-  <script defer src="js/term.js"></script>
+    <meta name="twitter:site" content="@lorokusumo" />
+    <meta name="twitter:creator" content="@lorokusumo" />
+    <meta property="og:url" content="https://atme.ga/" />
+    <meta property="og:title" content="atme.ga ditenagai oleh kopi & cinta." />
+    <meta property="og:description" content="atme.ga ditenagai oleh kopi & cinta." />
+    <meta property="og:image" content="https://atmega.github.io/arni.jpg" />
+    <style>
+        .fa-heart{color:#E91E63;}
+        .fa-coffee{color:#795548;}
+        .blinking{
+        animation:blinkingText 0.5s infinite;
+        }
+        @keyframes blinkingText{
+        0%{		color: #000;	}
+        49%{	color: transparent;	}
+        50%{	color: transparent;	}
+        99%{	color:transparent;	}
+        100%{	color: #000;	}
+        }
+        
+    </style>
+    <link rel="stylesheet" href="css/tooltip.css" type="text/css"/>
+    <link rel="stylesheet" href="makeup.css" type="text/css"/>
+    <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+    <script defer src="js/tooltip.js"></script>
+    <script defer src="js/term.js"></script>
 </head>
     <body onload="runCode(); setFocus()">
         <div class="base" onclick="setFocus()"></div>
         <div class="terminal">
           <!-- <div id="terminal_screen"> -->
             <p class="greeting"><center>
-                <pre>
+<pre>
         __                                 
 _____  |  | __  ___________ ____________   
 \__  \ |  |/ / /  ___/\__  \\_  __ \__  \  
  / __ \|    <  \___ \  / __ \|  | \// __ \_
 (____  /__|_ \/____  >(____  /__|  (____  /
      \/     \/     \/      \/           \/
-                  
-              </pre>
+</pre>
               <i class="fa fa-code"></i> ditenagai oleh <i class="fas fa-coffee"></i> & <span data-tooltip title="Yossi Adhyaksari" class="cursor"><i class="far fa-heart"></i></span>
             </center>
             </p>
@@ -54,7 +55,7 @@ _____  |  | __  ___________ ____________
           </div>
         <center>
           <div id="terminal_input">
-            <div class="cmd" style="display: inner-block"></div>
+            <div data-tooltip title="Type 'help', to show menu." class="cmd cursor" style="display: inner-block"></div>
             <textarea id="cmd_line" rows="1" placeholder="type your code here!">--help</textarea>
           </div>
         </center>

@@ -26,6 +26,11 @@ pre {
   vertical-align: top;
 }
 
+a {
+  color: crimson;
+  text-decoration: none;
+}
+
 .cmd:before {content: "λ "}
 .cmd {color: lime;text-align: center}
 .error {color: red; text-align: center; }
@@ -34,9 +39,8 @@ pre {
 .comment {color: gray}
 
 ul.list > li:before {
-  content: "⇨ ";
+  content: "▫ ";
   color: lightblue;
-  margin-left: 35px;
 }
 
 textarea {

@@ -92,7 +92,7 @@ function runCode() {
 
 function exit() {
   window.close();
-  alert("Exit function does not work on Codepen!");
+  alert("Are you sure ?");
 }
 
 function clear() {
@@ -109,10 +109,8 @@ function help() {
   code.innerHTML = `<center>
     <p class="warning"><i class="fa fa-question-circle" aria-hidden="true"></i>
  Available Menu</p>
-    <ul class="list">
+    <ul style="margin-left:-39px" class="list">
       <li>whoami</span></li>
-      <li>video list</li>
-      <li>video play &lsaquo;video_name&rsaquo;</li>
       <li>clear</li>      
       <li>exit</li>
     </ul></center>`;
@@ -121,22 +119,28 @@ function help() {
 
 function whoami() {
   code = document.createElement("p");
-  code.innerHTML = "nevcanuludas";
+  code.innerHTML = `
+  <center>
+    <img src='https://avatars2.githubusercontent.com/u/4507180?s=160&v=4'/><br>
+    Khoirul Aksara<br>
+    <a href="">./fb</a> | <a href="">./fb</a> | <a href="">./fb</a>
+  </center>`;
   document.getElementById("terminal_screen").appendChild(code);
 }
 
 function video_play(x) {
   code = document.createElement("p");
-  if ( x == 'TNT' ) {
-    code.innerHTML = '<span class="info">"AC/DC - T.N.T. (from Live at River Plate)"</span> is starting...';
+  if ( x == 'TNT' || x == 'tnt' ) {
+    code.innerHTML = '<center><span class="info">"AC/DC - T.N.T. (from Live at River Plate)"</span> is starting...';
     video.setAttribute("src", "https://www.youtube.com/embed/44XYEeD1A1U");
     document.getElementById("terminal_screen").appendChild(code);
     document.getElementById("terminal_screen").appendChild(video);
   } else if ( x == 'Smooth Criminal' ) {
-    code.innerHTML = '<span class="info">"Michael Jackson - Smooth Criminal (Official Video)"</span> is starting...';
+    code.innerHTML = '<center><span class="info">"Michael Jackson - Smooth Criminal (Official Video)"</span> is starting...';
     video.setAttribute("src", "https://www.youtube.com/embed/h_D3VFfhvs4");
     document.getElementById("terminal_screen").appendChild(code);
     document.getElementById("terminal_screen").appendChild(video);
+    code.innerHTML = '</center>';
   } else {
     code = document.createElement("p");
     code.className = "error";
