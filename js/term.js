@@ -153,7 +153,7 @@ function video_play(x) {
 
 function video_list() {
   code = document.createElement("div");
-  code.innerHTML = `
+  code.innerHTML = `<center>
     <p class="warning"><i class="fa fa-music" aria-hidden="true"></i>
  Here is the list</p>
     
@@ -163,7 +163,7 @@ function video_list() {
     </ul>
    
     <p class="info">Use 'video -p &lsaquo;video_name&rsaquo;' command for listening the song...</p>
-    
+    <center> 
   `;
   document.getElementById("terminal_screen").appendChild(code);
 }
