@@ -110,7 +110,9 @@ function help() {
     <p class="warning"><i class="fa fa-question-circle" aria-hidden="true"></i>
  Available Menu</p>
     <ul style="margin-left:-39px" class="list">
-      <li>whoami</span></li>
+      <li>whoami</li>
+      <li>video list</li>
+      <li>video play <span><title></span></li>
       <li>clear</li>      
       
     </ul></center>`;
@@ -130,9 +132,9 @@ function whoami() {
 
 function video_play(x) {
   code = document.createElement("p");
-  if ( x == 'TNT' || x == 'tnt' ) {
-    code.innerHTML = '<center><span class="info">"AC/DC - T.N.T. (from Live at River Plate)"</span> is starting...';
-    video.setAttribute("src", "https://www.youtube.com/embed/44XYEeD1A1U");
+  if ( x == 'Archangel' || x == 'archangel' ) {
+    code.innerHTML = '<center><span class="info">"TSFH - Archangel Cover"</span> is starting...';
+    video.setAttribute("src", "https://www.youtube.com/embed/CAb9Y832ARw");
     document.getElementById("terminal_screen").appendChild(code);
     document.getElementById("terminal_screen").appendChild(video);
   } else if ( x == 'Smooth Criminal' ) {
