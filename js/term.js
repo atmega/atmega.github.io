@@ -112,7 +112,7 @@ function help() {
     <ul style="margin-left:-39px" class="list">
       <li>whoami</span></li>
       <li>clear</li>      
-      <li>exit</li>
+      
     </ul></center>`;
   document.getElementById("terminal_screen").appendChild(code);
 }
