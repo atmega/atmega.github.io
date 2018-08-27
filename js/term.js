@@ -137,9 +137,9 @@ function video_play(x) {
     video.setAttribute("src", "https://www.youtube.com/embed/CAb9Y832ARw");
     document.getElementById("terminal_screen").appendChild(code);
     document.getElementById("terminal_screen").appendChild(video);
-  } else if ( x == 'Smooth Criminal' ) {
-    code.innerHTML = '<center><span class="info">"Michael Jackson - Smooth Criminal (Official Video)"</span> is starting...';
-    video.setAttribute("src", "https://www.youtube.com/embed/h_D3VFfhvs4");
+  } else if ( x == 'Endless Love' || x == 'endless love' ) {
+    code.innerHTML = '<center><span class="info">"EndlessLove - The Myth"</span> is starting...';
+    video.setAttribute("src", "https://www.youtube.com/embed/mtY8E_7eF1o");
     document.getElementById("terminal_screen").appendChild(code);
     document.getElementById("terminal_screen").appendChild(video);
     code.innerHTML = '</center>';
@@ -158,8 +158,8 @@ function video_list() {
  Here is the list</p>
     
     <ul class="list">
-      <li>TNT <span class="comment">AC/DC</span></li>
-      <li>Smooth Criminal <span class="comment">Michael Jackson</span></li>
+      <li>Archangel <span class="comment">TSFH</span></li>
+      <li>Endless Love <span class="comment">The Myth</span></li>
     </ul>
    
     <p class="info">Use 'video -p &lsaquo;video_name&rsaquo;' command for listening the song...</p>
