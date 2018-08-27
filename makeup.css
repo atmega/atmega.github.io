@@ -42,7 +42,10 @@ ul.list > li:before {
   content: "▫ ";
   color: lightblue;
 }
-
+ul.list-lagu > li:before {
+  content: "▫ ";
+  color: lightblue;
+}
 textarea {
   border: none;
   resize: none;
@@ -67,4 +70,9 @@ ul.list li{
 
 ul.list-lagu li{
   list-style: none;
+}
+
+iframe.screen{align:center}
+#terminal_screen{
+  text-align: center;
 }

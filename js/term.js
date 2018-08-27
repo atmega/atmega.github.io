@@ -122,38 +122,36 @@ function help() {
 function whoami() {
   code = document.createElement("p");
   code.innerHTML = `
-  <center>
     <img src='https://avatars2.githubusercontent.com/u/4507180?s=160&v=4'/><br>
     Khoirul Aksara<br>
-    <a href="">./fb</a> | <a href="">./fb</a> | <a href="">./fb</a>
-  </center>`;
+    <a target="_blank" href="https://fb.me/loro.kusumo">./fb</a> | <a target="_blank" href="https://twitter.com/lorokusumo">./twitter</a> | <a target="_blank" href="https://instagram.com/loro.kusumo">./ig</a>`;
   document.getElementById("terminal_screen").appendChild(code);
 }
 
 function video_play(x) {
   code = document.createElement("p");
   if ( x == 'Archangel' || x == 'archangel' ) {
-    code.innerHTML = '<center><span class="info">"TSFH - Archangel Cover"</span> is starting...';
+    code.innerHTML = '<span class="info">"TSFH - Archangel Cover"</span> is starting...';
     video.setAttribute("src", "https://www.youtube.com/embed/CAb9Y832ARw");
     document.getElementById("terminal_screen").appendChild(code);
     document.getElementById("terminal_screen").appendChild(video);
+
   } else if ( x == 'Endless Love' || x == 'endless love' ) {
-    code.innerHTML = '<center><span class="info">"EndlessLove - The Myth"</span> is starting...';
+    code.innerHTML = '<span class="info">"EndlessLove - The Myth"</span> is starting...';
     video.setAttribute("src", "https://www.youtube.com/embed/mtY8E_7eF1o");
     document.getElementById("terminal_screen").appendChild(code);
     document.getElementById("terminal_screen").appendChild(video);
-    code.innerHTML = '</center>';
   } else {
     code = document.createElement("p");
     code.className = "error";
-    code.innerHTML = 'Ops! "' + x + '"<center> could not be found! <pre class="warning"> ¯\\_(ツ)_/¯ </pre><center>';
+    code.innerHTML = 'Ops! "' + x + '"could not be found! <pre class="warning"> ¯\\_(ツ)_/¯ </pre>';
     document.getElementById("terminal_screen").appendChild(code);
   }
 }
 
 function video_list() {
   code = document.createElement("div");
-  code.innerHTML = `<center>
+  code.innerHTML = `
     <p class="warning"><i class="fa fa-music" aria-hidden="true"></i>
  Here is the list</p>
     
@@ -163,7 +161,7 @@ function video_list() {
     </ul>
    
     <p class="info">Use 'video -p &lsaquo;video_name&rsaquo;' command for listening the song...</p>
-    <center> 
+     
   `;
   document.getElementById("terminal_screen").appendChild(code);
 }
