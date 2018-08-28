@@ -31,19 +31,12 @@
     </style>
     <link rel="stylesheet" href="css/tooltip.css" type="text/css"/>
     <link rel="stylesheet" href="makeup.css" type="text/css"/>
-    <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
-    <script defer src="js/tooltip.js"></script>
-    <script defer src="js/term.js"></script>
-    <script defer src="js/jquery-3.3.1.min.js"></script>
-    <script>
-      (function($){('.tags_select a').click(function() {
-          var value = $(this).html();
-          var input = $('#cmd_line');
-          document.getElementById('cmd_line').value = '';
-          input.val(input.val() + value);
-          return false;
-      })})(jQuery);
-    </script>
+    <script type="text/javascript" defer src="https://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+    <script type="text/javascript" defer src="js/tooltip.js"></script>
+    <script type="text/javascript" defer src="js/term.js"></script>
+    
+    
 </head>
     <body onload="runCode(); setFocus()">
         <div class="base" onclick="setFocus()"></div>
@@ -72,5 +65,14 @@ _____  |  | __  ___________ ____________
         </div>
         <!-- <iframe width="0" height="0" src="https://www.youtube.com/embed/CAb9Y832ARw?start=2&autoplay=1&cc_load_policy=1" frameborder="0" allowfullscreen></iframe> -->
       </body>
+      <script type="text/javascript">
+          $('.tags_select a').click(function() {
+              var value = $(this).html();
+              var input = $('#cmd_line');
+              document.getElementById('cmd_line').value = '';
+              input.val(input.val() + value);
+              return false;
+          });
+        </script>
 </html>
       
