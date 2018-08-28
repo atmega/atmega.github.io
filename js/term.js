@@ -154,10 +154,10 @@ function video_list() {
   code.innerHTML = `
     <p class="warning"><i class="fa fa-music" aria-hidden="true"></i>
  Here is the list</p>
-    
+
     <ul class="list-lagu">
-      <li>Archangel <span class="comment">TSFH</span></li>
-      <li>Endless Love <span class="comment">The Myth</span></li>
+      <li><a href="#">Archangel</a> <span class="comment">TSFH</span></li>
+      <li><a href="#">Endless Love</a> <span class="comment">The Myth</span></li>
     </ul>
    
     <p class="info">Use 'video -p &lsaquo;video_name&rsaquo;' command for listening the song...</p>

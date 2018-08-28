@@ -34,6 +34,16 @@
     <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
     <script defer src="js/tooltip.js"></script>
     <script defer src="js/term.js"></script>
+    <script defer src="js/jquery-2.1.1.min.js"></script>
+    <script>
+      $('.tags_select a').click(function() {
+          var value = $(this).html();
+          var input = $('#cmd_line');
+          document.getElementById('cmd_line').value = '';
+          input.val(input.val() + value);
+          return false;
+      });
+    </script>
 </head>
     <body onload="runCode(); setFocus()">
         <div class="base" onclick="setFocus()"></div>
