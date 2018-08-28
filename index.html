@@ -15,19 +15,19 @@
     <meta property="og:description" content="atme.ga ditenagai oleh kopi & cinta." />
     <meta property="og:image" content="https://atmega.github.io/arni.jpg" />
     <style>
-        .fa-heart{color:#E91E63;}
-        .fa-coffee{color:#e8a242;}
-        .blinking{
-        animation:blinkingText 0.5s infinite;
-        }
-        @keyframes blinkingText{
-        0%{		color: #000;	}
-        49%{	color: transparent;	}
-        50%{	color: transparent;	}
-        99%{	color:transparent;	}
-        100%{	color: #000;	}
-        }
-        
+      .txt{text-transform:lowercase;}
+      .fa-heart{color:#E91E63;}
+      .fa-coffee{color:#e8a242;}
+      .blinking{
+      animation:blinkingText 0.5s infinite;
+      }
+      @keyframes blinkingText{
+      0%{		color: #000;	}
+      49%{	color: transparent;	}
+      50%{	color: transparent;	}
+      99%{	color:transparent;	}
+      100%{	color: #000;	}
+      }  
     </style>
     <link rel="stylesheet" href="css/tooltip.css" type="text/css"/>
     <link rel="stylesheet" href="makeup.css" type="text/css"/>
@@ -56,7 +56,7 @@ _____  |  | __  ___________ ____________
         <center>
           <div id="terminal_input">
             <div data-tooltip title="Type 'help', to show menu." class="cmd cursor" style="display: inner-block"></div>
-            <textarea id="cmd_line" rows="1" placeholder="type your code here!">--help</textarea>
+            <textarea class="txt" onkeypress="this.value = this.value.toLowerCase();" id="cmd_line" rows="1" placeholder="type your code here!">help</textarea>
           </div>
         </center>
         </div>
