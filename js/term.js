@@ -156,8 +156,8 @@ function video_list() {
  Here is the list</p>
 
     <ul class="list-lagu">
-      <li><a href="#">Archangel</a> <span class="comment">TSFH</span></li>
-      <li><a href="#">Endless Love</a> <span class="comment">The Myth</span></li>
+      <li><a href="javascript:;">Archangel</a> <span class="comment">TSFH</span></li>
+      <li><a href="javascript:;">Endless Love</a> <span class="comment">The Myth</span></li>
     </ul>
    
     <p class="info">Use 'video -p &lsaquo;video_name&rsaquo;' command for listening the song...</p>
