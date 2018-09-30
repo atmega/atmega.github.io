@@ -124,7 +124,7 @@ function whoami() {
   code.innerHTML = `
     <img data-tooltip title="Cah Ganteng" class="cursor" src='https://avatars2.githubusercontent.com/u/4507180?s=160&v=4'/><br>
     Khoirul Aksara<br>
-    <a data-tooltip title="Sukmo Wijoyo" class="cursor" target="_blank" href="https://fb.me/loro.kusumo">./fb</a> | <a data-tooltip title="Kusumo" class="cursor" target="_blank" href="https://twitter.com/lorokusumo">./twitter</a> | <a data-tooltip title="Wijoyo Kusumo" class="cursor" target="_blank" href="https://instagram.com/loro.kusumo">./ig</a>`;
+    <a data-tooltip title="Sukmo Wijoyo" class="cursor" target="_blank" href="https://fb.me/loro.kusumo">./fb</a> | <a data-tooltip title="Kusumo" class="cursor" target="_blank" href="https://twitter.com/khoirulaksara">./twitter</a> | <a data-tooltip title="Wijoyo Kusumo" class="cursor" target="_blank" href="https://instagram.com/loro.kusumo">./ig</a>`;
   document.getElementById("terminal_screen").appendChild(code);
 }
 
