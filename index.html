@@ -1,41 +1,78 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <link rel="shortcut icon" href="favicon.png">
-  <title>atme.ga</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@lorokusumo" />
-<meta name="twitter:creator" content="@lorokusumo" />
-<meta property="og:url" content="https://atme.ga/" />
-<meta property="og:title" content="atme.ga ditenagai oleh :kopi & :cinta" />
-<meta property="og:description" content="atme.ga ditenagai oleh kopi & cinta." />
-<meta property="og:image" content="https://atmega.github.io/arni.jpg" />
-  <style>
-    body{font-family:"Courier New";font-size:10pt}
-    pre{color:#3F51B5;}
-    .fa-heart{color:#E91E63;}
-    .fa-coffee{color:#795548;}
+    <link rel="shortcut icon" href="favicon.png">
+    <title>atme.ga</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="CLI (Command Line Interface) website UI">
+    <meta name="keyword" content="CLI, Command Line Interface, UI, User Interface, Design">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@lorokusumo" />
+    <meta name="twitter:creator" content="@lorokusumo" />
+    <meta property="og:url" content="https://atme.ga/" />
+    <meta property="og:title" content="atme.ga ditenagai oleh kopi & cinta." />
+    <meta property="og:description" content="atme.ga ditenagai oleh kopi & cinta." />
+    <meta property="og:image" content="https://atmega.github.io/dedek.jpg" />
+    <style>
+      .txt{text-transform:lowercase;}
+      .fa-heart{color:#E91E63;}
+      .fa-coffee{color:#e8a242;}
+      .blinking{
+      animation:blinkingText 0.5s infinite;
+      }
+      @keyframes blinkingText{
+      0%{		color: #000;	}
+      49%{	color: transparent;	}
+      50%{	color: transparent;	}
+      99%{	color:transparent;	}
+      100%{	color: #000;	}
+      }  
+    </style>
+    <link rel="stylesheet" href="css/tooltip.css" type="text/css"/>
+    <link rel="stylesheet" href="makeup.css" type="text/css"/>
+    <script type="text/javascript" defer src="js/jquery.js"></script>
+    <script type="text/javascript" defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+    <script type="text/javascript" defer src="js/tooltip.js"></script>
+    <script type="text/javascript" defer src="js/term.js"></script>
     
-  </style>
-  <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+    
 </head>
-
-<body><center>
+    <body onload="runCode(); setFocus()">
+        <div class="base" onclick="setFocus()"></div>
+        <div class="terminal">
+          <!-- <div id="terminal_screen"> -->
+            <p class="greeting"><center>
 <pre>
         __                                 
 _____  |  | __  ___________ ____________   
 \__  \ |  |/ / /  ___/\__  \\_  __ \__  \  
  / __ \|    <  \___ \  / __ \|  | \// __ \_
 (____  /__|_ \/____  >(____  /__|  (____  /
-     \/     \/     \/      \/           \/ 
-
+     \/     \/     \/      \/           \/
 </pre>
-  
-<i class="fa fa-code"></i> ditenagai oleh <i class="fas fa-coffee"></i> & <i class="far fa-heart"></i>
-  <br/>&copy; 2017 Sukmo Wijoyo
-</center>
-  <iframe width="0" height="0" src="https://www.youtube.com/embed/H-7rAJjjYM4?autoplay=1&cc_load_policy=1" frameborder="0" allowfullscreen></iframe>
-</body>
+              <i class="fa fa-code"></i> = <i class="fas fa-coffee"></i> + <span data-tooltip title="Yossi Adhyaksari" class="cursor"><i class="far fa-heart"></i></span>
+            </center>
+            </p>
+            <div id="terminal_screen"></div>
+          </div>
+        <center>
+          <div id="terminal_input">
+            <div data-tooltip title="Type 'help', to show menu." class="cmd cursor" style="display: inner-block"></div>
+            <textarea class="txt" onkeypress="this.value = this.value.toLowerCase();" id="cmd_line" rows="1" placeholder="type your code here!">help</textarea>
+          </div>
+        </center>
+        </div>
+        <!-- <iframe width="0" height="0" src="https://www.youtube.com/embed/CAb9Y832ARw?start=2&autoplay=1&cc_load_policy=1" frameborder="0" allowfullscreen></iframe> -->
+      </body>
+      <script type="text/javascript">
+          $('.list-lagu a').click(function() {
+              var value = $(this).html();
+              var input = $('#cmd_line');
+              document.getElementById('cmd_line').value = '';
+              input.val(input.val() + value);
+              return false;
+          });
+        </script>
 </html>
+      

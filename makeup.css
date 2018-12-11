@@ -1,0 +1,77 @@
+body { 
+  background-color: #000;
+  padding: 0px;
+  font-family: monospace;
+  /* font-size: 1rem;
+  line-height: 1.5rem; */
+  color: #FFF
+}
+pre {
+  font-family: monospace; 
+  line-height: 1.35em;
+}
+
+.base {
+  height: calc(100vh - 10px);
+  width: calc(100vw - 25px);
+  position: absolute;
+  z-index: -1;
+}
+.terminal {
+  background-color: transparent;
+}
+
+#terminal_input > * {
+  display: inline-block;
+  vertical-align: top;
+}
+
+a {
+  color: crimson;
+  text-decoration: none;
+}
+
+.cmd:before {content: "λ "}
+.cmd {color: lime;text-align: center}
+.error {color: red; text-align: center; }
+.warning {color: orange}
+.info {color: lightblue}
+.comment {color: gray}
+
+ul.list > li:before {
+  content: "▫ ";
+  color: lightblue;
+}
+ul.list-lagu > li:before {
+  content: "▫ ";
+  color: lightblue;
+}
+textarea {
+  border: none;
+  resize: none;
+  /* width: calc(100% - 25px); */
+  background-color: transparent;
+  font-family: monospace;
+  font-size: 1em;
+  line-height: 1.2em;
+  color: #FFF;
+}
+
+textarea:hover, 
+textarea:active, 
+textarea:focus {
+  outline: 0px !important;
+  -webkit-appearance: none;
+}
+ul.list li{
+  list-style: none;
+  display: inline;
+}
+
+ul.list-lagu li{
+  list-style: none;
+}
+
+#terminal_screen{
+  text-align: center;
+}
