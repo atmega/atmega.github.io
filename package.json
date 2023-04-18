@@ -4,8 +4,8 @@
   "private": true,
   "homepage": "https://atme.ga",
   "dependencies": {
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "gh-pages": "^1.0.0",
